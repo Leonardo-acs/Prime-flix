@@ -1,8 +1,9 @@
+import RoutesApp from "./routes";
 
 function App() {
   return (
     <div className="App">
-      <h1>PRIME FLIX</h1>
+      <RoutesApp />
     </div>
   );
 }
