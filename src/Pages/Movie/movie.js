@@ -31,7 +31,7 @@ function Filme() {
         loadMovie();
 
         return () => {
-            console.log('desmontado')
+            <></>
         }
     }, [id, navigate]);
 
@@ -63,7 +63,7 @@ function Filme() {
             <h1>{movie.title}</h1>
             <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
                 alt={movie.title}></img>
-            <h3>Sinopse</h3>
+            <h3>Sinopse:</h3>
             <span>{movie.overview}</span>
             <strong>Avaliação: {movie.vote_average.toFixed(1)} / 10</strong>
             <div className="buttonsArea">
